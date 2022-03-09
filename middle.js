@@ -11,37 +11,38 @@ const eqArrays = function(arr1, arr2){
 }
 
 
-const assertArraysEqual = function(arr1, arr2){
+ const assertArraysEqual = function(arr1, arr2){ 
   if(eqArrays(arr1, arr2) === true) {
     console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
   } else {
     console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`);
   }
-};
+}; 
 
 
-const middle = function (array){
+
+const middle = function (arr){
   let newArray = [];
 
   //For arrays with one or two elements, there is no middle. Return an empty array.
-  if(array.length <= 2){
+  if(arr.length <= 2){
     return newArray;
   }
   //single element is returned if odd
-  if(array.length % 2 === 1) {
-    newArray.push(array[Math.floor(array.length / 2)]);
+  if(arr.length % 2 === 1) {
+    newArray.push(arr[Math.floor(arr.length / 2)]);
   } 
   //else indicating even numbers, the middle two elements are returned
   else {
-    newArray.push(array[Math.floor((array.length / 2) - 1)]);
-    newArray.push(array[Math.floor(array.length / 2)]);
+    newArray.push(arr[Math.floor((arr.length / 2) - 1)]);
+    newArray.push(arr[Math.floor(arr.length / 2)]);
   }
   return newArray
 };
 
-console.log(middle([1])) // => []
-console.log(middle([1, 2])) // => []
-console.log(middle([1, 2, 3])) // => [2]
-console.log(middle([1, 2, 3, 4, 5])) // => [3]
-console.log(middle([1, 2, 3, 4])) // => [2, 3]
-console.log(middle([1, 2, 3, 4, 5, 6])) // => [3, 4]
+assertArraysEqual(middle([1]), []) // => []
+assertArraysEqual(middle([1, 2]), []) // => []
+assertArraysEqual(middle([1, 2, 3]), [2]) // => [2]
+assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]) // => [3]
+assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]) // => [2, 3]
+assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]) // => [3, 4] 
