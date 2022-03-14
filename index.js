@@ -14,19 +14,19 @@ const without = require('./middle');
 const map = require('./map');
 
 module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle,
-  assertEqual: assertEqual,
-  assertArraysEqual: assertArraysEqual,
-  assertObjectsEqual: assertObjectsEqual,
-  eqArrays: eqArrays,
-  eqObjects: eqObjects,
-  countOnly: countOnly,
-  countLetters: countLetters,
-  findKeyByValue: findKeyByValue,
-  takeUntil: takeUntil,
-  without: without,
-  map: map,
+  head,
+  tail,
+  middle,
+  assertEqual,
+  assertArraysEqual,
+  assertObjectsEqual,
+  eqArrays,
+  eqObjects,
+  countOnly,
+  countLetters,
+  findKeyByValue,
+  takeUntil,
+  without,
+  map
 
 };
