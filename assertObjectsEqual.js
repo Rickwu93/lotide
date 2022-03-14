@@ -33,6 +33,8 @@ const eqObjects = function(object1, object2) {
     
   //console.log(`Example label: ${inspect(actual)}`);
 
+  module.exports = assertObjectsEqual;
+
 
 
 

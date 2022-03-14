@@ -29,6 +29,7 @@ const eqArrays = function(arr1, arr2){
   return true
 };
 
-const results1 = map(words, word => word[0]);
-console.log(results1); 
+//const results1 = map(words, word => word[0]);
+//console.log(results1); 
 
+module.exports = map;

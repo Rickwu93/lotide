@@ -25,3 +25,5 @@ const testing1 = countLetters('Lighthouse in the house');
 assertEqual(testing1['L'], 1);
 assertEqual(testing1['3'], undefined);
 assertEqual(testing1['u'], 4);
+
+module.exports = countLetters;
